@@ -34,10 +34,18 @@ public class Student {
     // =========================
     // GETTERS
     // =========================
-    public String getFirstName() { return firstName; }
-    public String getMiddleInitial() { return middleInitial; }
-    public String getLastName() { return lastName; }
-    public int getAge() { return age; }
+    public String getFirstName() {
+        return firstName; 
+    }
+    public String getMiddleInitial() {
+        return middleInitial; 
+    }
+    public String getLastName() { 
+        return lastName;
+    }
+    public int getAge() { 
+        return age; 
+    }
     public String getCourse() { return course; }
     public int getSection() { return section; }
     public int getStudentNumber() { return studentNumber; }
@@ -122,3 +130,4 @@ public class Student {
         }
     }
 }
+
