@@ -46,12 +46,24 @@ public class Student {
     public int getAge() { 
         return age; 
     }
-    public String getCourse() { return course; }
-    public int getSection() { return section; }
-    public int getStudentNumber() { return studentNumber; }
-    public String getAddress() { return address; }
-    public String getPhoneNumber() { return phoneNumber; }
-    public boolean isEnrolled() { return isEnrolled; }
+    public String getCourse() { 
+        return course; 
+    }
+    public int getSection() { 
+        return section;
+    }
+    public int getStudentNumber() {
+        return studentNumber; 
+    }
+    public String getAddress() { 
+        return address; 
+    }
+    public String getPhoneNumber() { 
+        return phoneNumber; 
+    }
+    public boolean isEnrolled() { 
+        return isEnrolled; 
+    }
 
     @Override
     public String toString() {
@@ -130,4 +142,5 @@ public class Student {
         }
     }
 }
+
 
