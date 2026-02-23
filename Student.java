@@ -31,7 +31,6 @@ public class Student {
         this.phoneNumber = builder.phoneNumber;
         this.isEnrolled = builder.isEnrolled;
     }
-
     // =========================
     // GETTERS
     // =========================
@@ -60,8 +59,6 @@ public class Student {
                 "Address: " + address + "\n" +
                 "Phone Number: " + phoneNumber + "\n" +
                 "Enrolled: " + (isEnrolled ? "Yes" : "No");
-        
-
     }
 
     // =========================
@@ -79,17 +76,49 @@ public class Student {
         private String phoneNumber;  // changed from int to String
         private boolean isEnrolled;
 
-        public Builder setFirstName(String firstName) { this.firstName = firstName; return this; }
-        public Builder setMiddleInitial(String middleInitial) { this.middleInitial = middleInitial; return this; }
-        public Builder setLastName(String lastName) { this.lastName = lastName; return this; }
-        public Builder setAge(int age) { this.age = age; return this; }
-        public Builder setCourse(String course) { this.course = course; return this; }
-        public Builder setSection(int section) { this.section = section; return this; }
-        public Builder setStudentNumber(int studentNumber) { this.studentNumber = studentNumber; return this; }
-        public Builder setAddress(String address) { this.address = address; return this; }
-        public Builder setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; return this; }
-        public Builder setIsEnrolled(boolean isEnrolled) { this.isEnrolled = isEnrolled; return this; }
+        public Builder setFirstName(String firstName) { 
+            this.firstName = firstName;
+            return this; 
+        }
+        public Builder setMiddleInitial(String middleInitial) { 
+            this.middleInitial = middleInitial; 
+            return this;
+        }
+        public Builder setLastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+        public Builder setAge(int age) { 
+            this.age = age;
+            return this;
+        }
+        public Builder setCourse(String course) {
+            this.course = course;
+            return this;
+        }
+        public Builder setSection(int section) { 
+            this.section = section;
+            return this; 
+        }
+        public Builder setStudentNumber(int studentNumber) { 
+            this.studentNumber = studentNumber;
+            return this;
+        }
+        public Builder setAddress(String address) { 
+            this.address = address;
+            return this;
+        }
+        public Builder setPhoneNumber(String phoneNumber) {
+            this.phoneNumber = phoneNumber; 
+            return this;
+        }
+        public Builder setIsEnrolled(boolean isEnrolled) {
+            this.isEnrolled = isEnrolled;
+            return this;
+        }
 
-        public Student build() { return new Student(this); }
+        public Student build() { 
+            return new Student(this); 
+        }
     }
 }
